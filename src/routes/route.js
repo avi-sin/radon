@@ -5,6 +5,59 @@ const lodash = require('lodash')
 
 const router = express.Router();
 
+let players =
+   [
+       {
+           "name": "manish",
+           "dob": "1/1/1995",
+           "gender": "male",
+           "city": "jalandhar",
+           "sports": [
+               "swimming"
+           ]
+       },
+       {
+           "name": "gopal",
+           "dob": "1/09/1995",
+           "gender": "male",
+           "city": "delhi",
+           "sports": [
+               "soccer"
+           ],
+       },
+       {
+           "name": "lokesh",
+           "dob": "1/1/1990",
+           "gender": "male",
+           "city": "mumbai",
+           "sports": [
+               "soccer"
+           ],
+       },
+   ]
+ 
+   router.post('/players', function (req, res) {
+ 
+       //LOGIC WILL COME HERE
+    let ele = req.body.name
+    let flag = false;
+    for (let i = 0; i < players.length; i++) {
+        if (ele == players[i].name) {
+            flag = true;
+            continue;
+        } else if (ele != players[i].name) {
+            players.push(req.body);
+        }
+    }
+    if (flag = true) {
+        players = "name already exists."
+    }
+
+
+       res.send(  { data: players , status: true }  )
+   });
+
+
 router.get('/test-me', function (req, res) {
     
 
@@ -72,6 +125,86 @@ router.get('/candidates/:canidatesName', function(req, res){
     res.send('Done')
 })
 
+
+// get API assignment solution:
+
+// Problem 1: GET /movies
+
+router.get('/movies', function (req, res) {
+    const movies = ['Rang de basanti', 'The shining', 'Lord of the rings', 'Batman begins']
+
+    res.send( { movies: movies } )
+});
+
+
+// Problem 2 and Problem 3: GET /movies/:indexNumber
+
+router.get('/movies/:indexNumber', function (req, res) {
+    const movies = ['Rang de basanti', 'The shining', 'Lord of the rings', 'Batman begins']
+    
+    if (req.params.indexNumber < movies.length) {
+        res.send(movies[req.params.indexNumber])
+    } else {
+        res.send(`Error: Use a valid index.`)
+    }
+
+});
+
+
+// Problem 4: GET /films
+
+router.get('/films', function (req, res) {
+    const films = [{
+        "id": 1,
+        "name": "The Shining"
+       },
+       {
+        "id": 2,
+        "name": "Incendies"
+       },
+       {
+        "id": 3,
+        "name": "Rang de Basanti"
+       },
+       {
+        "id": 4,
+        "name": "Finding Nemo"
+       }]
+
+    res.send( { array: films } )
+});
+
+
+// Problem 5: GET /films/:filmId
+
+router.get('/films/:filmId', function (req, res) {
+    const films = [{
+        "id": 1,
+        "name": "The Shining"
+       },
+       {
+        "id": 2,
+        "name": "Incendies"
+       },
+       {
+        "id": 3,
+        "name": "Rang de Basanti"
+       },
+       {
+        "id": 4,
+        "name": "Finding Nemo"
+       }]
+
+    if (req.params.filmId <= films.length) {
+        res.send(films[(req.params.filmId) - 1])
+    } else {
+        res.send(`No movie exists with this id`)
+    }
+
+    
+});
+
+// get API assignments solution ends here.
 
 module.exports = router;
 // adding this comment for no reason
