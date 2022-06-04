@@ -40,18 +40,19 @@ let players =
  
        //LOGIC WILL COME HERE
     let ele = req.body.name
-    let flag = false;
+    // let flag = false;
     for (let i = 0; i < players.length; i++) {
+        // let flag = false;
         if (ele == players[i].name) {
-            flag = true;
+            // flag = true;
             continue;
         } else if (ele != players[i].name) {
             players.push(req.body);
         }
     }
-    if (flag = true) {
-        players = "name already exists."
-    }
+    // if (flag = true) {
+    //     players = "name already exists."
+    // }
 
 
        res.send(  { data: players , status: true }  )
