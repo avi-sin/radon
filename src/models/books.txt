@@ -1,0 +1,55 @@
+1.
+{
+    "bookName": "Journey to the Center of the Earth",
+    "authorName": "Jules Verne",
+    "category": "Novel, Science fiction, Adventure fiction, Scientific romance",
+    "year": "1864"
+}
+
+2.
+{
+    "bookName": "Around the World in Eighty Days",
+    "authorName": "Jules Verne, Peter Holeinone",
+    "category": "Children's literature, Adventure fiction",
+    "year": "1872"
+}
+
+3.
+{
+    "bookName": "Treasure Island",
+    "authorName": "Robert Louis Stevenson",
+    "category": "Novel, Adventure fiction, Young adult fiction, Nautical fiction",
+    "year": "1883"
+}
+
+4.
+{
+    "bookName": "Moby-Dick",
+    "authorName": "Herman Melville",
+    "category": "Adventure fiction, Epic, Nautical fiction",
+    "year": "1851"
+}
+
+5.
+{
+    "bookName": "Dune",
+    "authorName": "Frank Herbert",
+    "category": "Science fiction, Novel, Fantasy Fiction, Adventure fiction, Conspiracy fiction, Military science fiction, Planetary romance",
+    "year": "1965"
+}
+
+6.
+{
+    "bookName": "The Bourne Identity",
+    "authorName": "Robert Ludlum",
+    "category": "Thriller, Novel, Spy fiction, Adventure fiction",
+    "year": "1980"
+}
+
+7.
+{
+    "bookName": "The War of the Worlds",
+    "authorName": "H. G. Wells",
+    "category": "Science fiction",
+    "year": "1897"
+}
