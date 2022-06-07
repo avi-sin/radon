@@ -1,6 +1,11 @@
 const { count } = require("console")
 const BookModel = require("../models/bookModel")
 
+
+// Mongo session 2 assignment
+
+// 1st API :-
+
 const createBook = async function (req, res) {
     let data = req.body
 
@@ -8,10 +13,16 @@ const createBook = async function (req, res) {
     res.send({msg: savedData})
 }
 
+
+// 2nd API :-
+
 const bookList = async function (req, res) {
     let allBooks = await BookModel.find().select( { bookName: 1, authorName: 1, _id: 0 } )
     res.send({msg: allBooks})
 }
+
+
+// 3rd API :-
 
 const getBooksInYear = async function (req, res) {
     let yr = req.body.year
@@ -19,11 +30,17 @@ const getBooksInYear = async function (req, res) {
     res.send({msg: thatYearBooks})
 }
 
+
+// 4th API :-
+
 const getParticularBooks = async function (req, res) {
     let data = req.body
     let allBooks = await BookModel.find(data)
         res.send({ msg: allBooks })
 }
+
+
+// 5th API :-
 
 const getXINRBooks = async function (req, res) {
     let allBooks = await BookModel.find({
@@ -33,12 +50,18 @@ const getXINRBooks = async function (req, res) {
     res.send({msg: allBooks})
 }
 
+
+// 6th API :-
+
 const getRandomBooks = async function (req,res) {
     let randomBooks = await BookModel.find( {
         $or : [ { stockAvailable: true }, { totalpages: { $gt: 500 } } ]
     })
     res.send({msg: randomBooks})
 }
+
+// Mongo session 2 assignment complete.
+
 
 const getBooksData= async function (req, res) {
 
