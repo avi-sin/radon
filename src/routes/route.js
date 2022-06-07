@@ -18,7 +18,7 @@ router.post("/createBook", BookController.createBook  )  // 1st
 
 router.get("/bookList", BookController.bookList  ) // 2nd
 
-router.get("/getBooksInYear", BookController.getBooksInYear  ) // 3rd
+router.post("/getBooksInYear", BookController.getBooksInYear  ) // 3rd
 
 router.get("/getXINRBooks", BookController.getXINRBooks  ) // 4th
 
