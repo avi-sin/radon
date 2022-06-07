@@ -12,7 +12,21 @@ router.post("/createUser", UserController.createUser  )
 
 router.get("/getUsersData", UserController.getUsersData)
 
-router.post("/createBook", BookController.createBook  )
+
+
+router.post("/createBook", BookController.createBook  )  // 1st
+
+router.get("/bookList", BookController.bookList  ) // 2nd
+
+router.get("/getBooksInYear", BookController.getBooksInYear  ) // 3rd
+
+router.get("/getXINRBooks", BookController.getXINRBooks  ) // 4th
+
+router.get("/getRandomBooks", BookController.getRandomBooks  ) // 5th
+
+router.post("/getParticularBooks", BookController.getParticularBooks  ) // 6th
+
+
 
 router.get("/getBooksData", BookController.getBooksData)
 
