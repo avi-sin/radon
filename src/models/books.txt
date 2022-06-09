@@ -1,0 +1,99 @@
+1.
+{
+    "name": "Two states",
+    "author": "62a1d77ab557135d8bb4752b",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a1d742b557135d8bb47529",
+    "isHardCover": false
+}
+
+2.
+{
+    "name": "The Lost Princess of Oz",
+    "author": "62a2173e14ed2e967f6fd9e5",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a2126b0a62144f6d8d5cd3"
+    "isHardCover": false
+}
+
+3.
+{
+    "name": "Five Point Someone",
+    "author": "62a1d77ab557135d8bb4752b",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a212500a62144f6d8d5cd1"
+    "isHardCover": false
+}
+
+4.
+{
+    "name": "Atlas Shrugged",
+    "author": "62a2175e14ed2e967f6fd9e7",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a2121d0a62144f6d8d5ccf"
+    "isHardCover": false
+}
+
+5.
+{
+    "name": "Ozma of Oz",
+    "author": "62a2173e14ed2e967f6fd9e5",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a2126b0a62144f6d8d5cd3"
+    "isHardCover": false
+}
+
+6.
+{
+    "name": "Anthem",
+    "author": "62a2175e14ed2e967f6fd9e7",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a212500a62144f6d8d5cd1"
+    "isHardCover": false
+}
+
+7.
+{
+    "name": "Jamaica Inn",
+    "author": "62a2178c14ed2e967f6fd9ed",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a1d742b557135d8bb47529"
+    "isHardCover": false
+}
+
+8.
+{
+    "name": "Armadale",
+    "author": "62a2177014ed2e967f6fd9e9",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a2126b0a62144f6d8d5cd3"
+    "isHardCover": false
+}
+
+9.
+{
+    "name": "My Sister's Keeper",
+    "author": "62a2177f14ed2e967f6fd9eb",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a212500a62144f6d8d5cd1"
+    "isHardCover": false
+}
+
+10.
+{
+    "name": "The Birds",
+    "author": "62a2178c14ed2e967f6fd9ed",
+	"price": 50,
+	"ratings": 4.5,
+    "publisher": "62a2121d0a62144f6d8d5ccf"
+    "isHardCover": false
+}

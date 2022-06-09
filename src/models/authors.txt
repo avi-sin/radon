@@ -1,0 +1,47 @@
+1.
+{
+    "authorName": "Chetan Bhagat",
+	"age": 50,
+	"address": "New Delhi",
+    "rating": 2
+}
+
+2.
+{
+    "authorName": "L. Frank Baum",
+	"age": 63,
+	"address": "Los Angeles",
+    "rating": 3
+}
+
+3.
+{
+    "authorName": "Ayn Rand",
+	"age": 77,
+	"address": "New York",
+    "rating": 3.5
+}
+
+4.
+{
+    "authorName": "Wilkie Collins",
+	"age": 65,
+	"address": "London",
+    "rating": 4
+}
+
+5.
+{
+    "authorName": "Jodi Picoult",
+	"age": 56,
+	"address": "New York",
+    "rating": 4.5
+}
+
+6.
+{
+    "authorName": "Daphne du Maurier",
+	"age": 82,
+	"address": "London",
+    "rating": 5
+}
