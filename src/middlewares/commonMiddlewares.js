@@ -7,6 +7,8 @@ const mid1= function ( req, res, next) {
 
 const mid2= function ( req, res, next) {
     console.log("Hi I am a middleware named Mid2")
+    // let date = new Date().toLocaleString()
+    // console.log(date, req.socket.remoteAddress, req.originalUrl);
     next()
 }
 
