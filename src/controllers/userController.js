@@ -1,8 +1,5 @@
 const UserModel= require("../models/userModel")
 
-
-
-
 const basicCode= async function(req, res, next) {
     let tokenDataInHeaders= req.headers.token
     console.log(tokenDataInHeaders)
@@ -15,7 +12,11 @@ const basicCode= async function(req, res, next) {
 
 const createUser= async function (req, res) {
     
+    
     let data= req.body
+    let userCreated = await UserModel.create(data)
+
+
     let tokenDataInHeaders= req.headers.token
     //Get all headers from request
     console.log("Request headers before modificatiom",req.headers)
@@ -35,6 +36,8 @@ const createUser= async function (req, res) {
     //Set a header in response
     res.header('year','2022')
     res.send({msg: "Hi"})
+
+    
 }
 
 const getUsersData= async function (req, res) {
@@ -42,6 +45,17 @@ const getUsersData= async function (req, res) {
     res.send({msg: allUsers})
 }
 
+
+const createUser1 = async function (req, res) {
+    let data = req.body
+    data.isFreeAppUser = req.headers['isfreeappuser']
+    // console.log(data);
+    let userCreated = await UserModel.create(data)
+    res.send({userCreated})
+}
+
 module.exports.createUser= createUser
+module.exports.createUser1= createUser1
 module.exports.getUsersData= getUsersData
 module.exports.basicCode= basicCode
+
