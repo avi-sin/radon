@@ -33,7 +33,7 @@ const loginUser = async function (req, res) {
     if (!user)
       return res.status(403).send( { status: false, msg: "username or the password is not correct" } );
 
-    let token = jwt.sign(
+      let token = jwt.sign(
       {
         userId: user._id.toString(),
         batch: "radon",
