@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Avinash Singh",
+        "age": 5,
+        "subject": "Science"
+    },
+    {
+        "name": "Yogesh Singh",
+        "age": 17,
+        "subject": "Music"
+    },
+    {
+        "name": "Rahul Banerjee",
+        "age": 18,
+        "subject": "Programming"
+    },
+    {
+        "name": "Abhishek Meena",
+        "age": 16,
+        "subject": "Machines"
+    },
+    {
+        "name": "Shubham Sinha",
+        "age": 18,
+        "subject": "Physical"
+    }
+]
